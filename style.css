@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+svg{
+    background-color: #fff;
+}
+
+svg text{
+    font-size: 5rem;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #6274db;
+    letter-spacing: 3px;
+    animation: effect 3s infinite alternate;
+}
+
+/* Here is the animation */
+@keyframes effect {
+    0%{
+        stroke-dasharray: 0 70%;
+    }
+
+    100%{
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}
